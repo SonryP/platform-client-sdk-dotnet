@@ -220,12 +220,12 @@ namespace PureCloudPlatform.Client.V2.Client
         /// <value>Timeout.</value>
         public int Timeout
         {
-            get { return ApiClient.RestClient.Timeout; }
+            get { return ApiClient.RestClient.Options.Timeout; }
 
             set
             {
                 if (ApiClient != null)
-                    ApiClient.RestClient.Timeout = value;
+                    ApiClient.RestClient.Options.Timeout = value;
             }
         }
 
